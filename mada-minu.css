@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  background-color: rgb(235, 233, 100);
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('https://i.scdn.co/image/ab67616d00001e021f8dfd12b7c4d95c7dc59bb3');
+  background-repeat: no-repeat;
+  background-position:  right;
+  background-attachment: fixed;
+  background-size: 50%;
+}
+p{
+  font-size: x-large;
+  display: inline-block;
+}
+p.red:hover{
+  color: red;
+  background-color: rgb(69, 207, 64);
+}
+p.pink:hover{
+  color: rgb(94, 18, 18);
+  background-color: rgb(221, 141, 154);
+}
+#conteiner {
+  background-color: ghostwhite;
+  width: 800px;
+  margin: left;
+}
+
+#conteudo {
+  padding: 16px;
+}
+/* a{
+  color: black;
+}*/
+a:link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+
+a:hover {
+  color: red;
+}
+
+#topo {
+  padding: 7px;
+  background-color: rgb(208, 238, 37);
+  text-align: right;
+  padding-right: 10px;
+}
+
+#navegacao {
+  background-color: rgb(3, 221, 94);
+  position: sticky;
+  top: 0px;
+}
+
+#destaque {
+  position: relative;
+ left: 70px;
+}
+
+.menu {
+  list-style: none;
+  padding: 16px;
+  margin-top: 0px;
+
+}
+
+.menu > li {
+  display: inline;
+  padding: 16px;
+}
+#rodape {
+  background-color: black;
+  padding: 16px;
+  text-align: center;
+}
+
+

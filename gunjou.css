@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(49, 122, 233);
+  background-image: url('https://i.pinimg.com/originals/d4/db/99/d4db99a935e5806cdce9358a9a101124.jpg');
+  background-repeat: no-repeat;
+  background-position: right 10%;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 45px;
+  color: rgb(160, 37, 133);
+  display: inline-block;
+}
+
+
+ p {
+  background-color:rgb(160, 37, 133);
+  color: rgb(233, 208, 208);
+  font-size: x-large;
+  display: inline;
+  cursor: default;
+}
+p:hover{
+  color:rgb(160, 37, 133);
+  background-color: rgb(233, 208, 208);
+  border-radius: 10px;
+}
+a {
+  color: rgb(160, 37, 133);
+  font-size: xx-large;
+}
+
+a:hover {
+  color: red;
+}
+
+div.video{
+  position: sticky;
+  top: 30px;
+  float: right;
+  width: 600px;
+}
