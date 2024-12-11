@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: rgb(235, 233, 100);
+  background-color: #ffc700;
   font-family: Arial, Helvetica, sans-serif;
   background-image: url('https://i.scdn.co/image/ab67616d00001e021f8dfd12b7c4d95c7dc59bb3');
   background-repeat: no-repeat;
@@ -8,73 +8,61 @@ body {
   background-attachment: fixed;
   background-size: 50%;
 }
-p{
-  font-size: x-large;
-  display: inline-block;
-}
-p.red:hover{
-  color: red;
-  background-color: rgb(69, 207, 64);
-}
-p.pink:hover{
-  color: rgb(94, 18, 18);
-  background-color: rgb(221, 141, 154);
-}
-#conteiner {
+article{
   background-color: ghostwhite;
   width: 800px;
   margin: left;
 }
-
-#conteudo {
-  padding: 16px;
+#video {
+  padding-top: 10px;
+  position: relative;
+  left: 70px;
 }
-/* a{
-  color: black;
-}*/
-a:link {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
-
-a:hover {
-  color: red;
-}
-
-#topo {
-  padding: 7px;
-  background-color: rgb(208, 238, 37);
-  text-align: right;
-  padding-right: 10px;
-}
-
-#navegacao {
-  background-color: rgb(3, 221, 94);
+nav{
+  background-color:#368f5f;
   position: sticky;
   top: 0px;
 }
-
-#destaque {
-  position: relative;
- left: 70px;
-}
-
 .menu {
   list-style: none;
   padding: 16px;
   margin-top: 0px;
 
 }
-
 .menu > li {
   display: inline;
   padding: 16px;
 }
-#rodape {
-  background-color: black;
+section{
+  padding: 16px;
+}
+p{
+  font-size: x-large;
+  display: inline-block;
+  padding: 10px;
+}
+p:hover{
+  border-radius: 20px;
+}
+p.red:hover{
+  background-color: #368f5f;
+}
+p.pink:hover{
+  background-color: #ea4801;
+}
+footer{
+  background-color: #368f5f;
   padding: 16px;
   text-align: center;
 }
-
+a:link {
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+a:hover {
+  border-radius: 20px;
+  background-color: #ffc700;
+  color: red;
+}
 
