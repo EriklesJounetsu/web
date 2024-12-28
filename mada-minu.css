@@ -40,9 +40,11 @@ p{
   font-size: x-large;
   display: inline-block;
   padding: 10px;
+  transition: 5s;
 }
 p:hover{
   border-radius: 20px;
+  transition: 0.5s;
 }
 p.red:hover{
   background-color: #368f5f;
