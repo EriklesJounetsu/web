@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+    #logo{
+    width: 100px;
+    height: 100px;
+}
+header{
+   height: 90px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 15px;   
+}
+a{
+    color: black;
+    font-family:"Noto Sans JP", serif;
+}
+a:hover{   
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+a.gunjou:hover{
+    background-color: rgb(160, 37, 133);
+    color:#659bec;
+}
+a.mada:hover{
+    background-color: #ffc700;
+    color: #279c13;
+}
+a.blood:hover{
+    background-color: rgb(33, 35, 163);
+    color:#ff1c1c;
+}
+p{
+    font-family:'kdam thmor pro', sans-serif;
+}
+h1{
+    font-family:'kdam thmor pro', sans-serif;
+}
