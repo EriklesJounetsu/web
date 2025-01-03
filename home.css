@@ -2,49 +2,70 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-}
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
-
-    #logo{
+  }
+#logo{
     width: 100px;
     height: 100px;
-}
+     }
 header{
    height: 90px;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
-}
+    background-color: #b50a3b;
+    background-blend-mode: color-dodge;
+      }
 li{
     list-style: none;
-    display: inline-block;
     margin: 0px 15px;   
-}
+  }
 a{
+    font-size: larger;
     color: black;
-    font-family:"Noto Sans JP", serif;
-}
-a:hover{   
+    transition: ease-in  0.5s;
+ }
+a:hover{  
     padding: 10px;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
-}
+    justify-content: space-around;
+       }
 a.gunjou:hover{
     background-color: rgb(160, 37, 133);
     color:#659bec;
-}
+              }
 a.mada:hover{
     background-color: #ffc700;
     color: #279c13;
-}
+            }
 a.blood:hover{
     background-color: rgb(33, 35, 163);
     color:#ff1c1c;
 }
 p{
     font-family:'kdam thmor pro', sans-serif;
-}
+    
+ }
 h1{
     font-family:'kdam thmor pro', sans-serif;
+  }
+div.sobre{
+    display: inline-block;
+    position: relative;
+    left: 30%;
+    text-align: center;
+         }
+div.motivo{
+    display: inline-block;
+    position: relative;
+    left: 30%;
+    text-align: center;
+    
+          }
+div.musicas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content:center; */
 }
