@@ -24,7 +24,7 @@ a{
     font-size: larger;
     color: black;
     transition: ease-in  0.5s;
- }
+}
 a:hover{  
     padding: 10px;
     border-radius: 10px;
@@ -45,27 +45,94 @@ a.blood:hover{
 }
 p{
     font-family:'kdam thmor pro', sans-serif;
-    
  }
 h1{
     font-family:'kdam thmor pro', sans-serif;
   }
-div.sobre{
+.sobre{
     display: inline-block;
     position: relative;
     left: 30%;
     text-align: center;
          }
-div.motivo{
+.motivo{
     display: inline-block;
     position: relative;
     left: 30%;
     text-align: center;
     
           }
-div.musicas{
+.musicas{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     /* justify-content:center; */
+}
+
+.card-conteiner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.song-cards{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 20px;   
+}
+.card{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    font-size: 17px;
+    transition: ease-in  0.5s;
+
+}
+.card-1{
+    transition: ease-in  0.5s;
+}
+.banner-1{
+    background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/32/3c/ed/323ced46-bcc0-41cf-d5a1-325b7207df9f/jacket_KSCL01068B00Z_550.jpg/600x600bf-60.jpg');
+
+}
+.banner-2{
+    background-image: url('https://i.scdn.co/image/ab67616d0000b273628cc2db55d7141c40046cfd');
+}
+.banner-3{
+    background-image: url('https://cdn-images.dzcdn.net/images/cover/230aff850451111a12fff99b7aed98ed/500x500.jpg');
+}
+.card:hover{
+    transform: scale(1.03);
+}
+.card:hover p.card-1{
+    background-color: rgb(160, 37, 133);
+    color:#659bec;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.card:hover p.card-2{
+    background-color: #ffc700;
+    color: #279c13;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.card:hover p.card-3{
+    background-color: rgb(33, 35, 163);
+    color:#ff1c1c;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
 }
