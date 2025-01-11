@@ -5,7 +5,10 @@ body {
   background-position: right 10%;
   background-attachment: fixed;
 }
-
+#logo{
+  width: 100px;
+  height: 100px;
+   }
 h1 {
   font-size: 45px;
   color: rgb(160, 37, 133);
