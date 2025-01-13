@@ -1,4 +1,4 @@
-*{
+    *{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
@@ -9,13 +9,13 @@
     height: 100px;
      }
 header{
-   height: 90px;
-    padding: 10px;
+    height: 90px;
+    padding: 10px 0px;
     display: flex;
     justify-content:space-between;
     align-items: center;
     background-color: #b50a3b;
-    background-blend-mode: color-dodge;
+    box-sizing: border-box;
       }
 header p {
     color: #fff;
@@ -44,7 +44,6 @@ h1{
           }
 .musicas{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
 }
 .musicas p{
@@ -128,4 +127,52 @@ h1{
     padding: 10px;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
+}
+
+footer{
+display: none;
+margin-top: 20px;
+height: 90px;
+padding: 10px 0px;
+align-items: center;
+justify-content: center;
+background-color: #b50a3b;
+}
+footer p{
+    color: #fff;
+    font-size: 20px;
+    background-color: transparent;
+}
+@media (max-width: 768px) {
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px 10px;
+    }
+    header p {
+        display: none;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+    }
+    .sobre{
+        position: relative;
+        left: 0px;
+    }
+    .motivo{
+        position: relative;
+        left: 0px;
+    }
+    footer {
+        display:flex;
+    }
+    .song-cards {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 5px;
+    }
 }
