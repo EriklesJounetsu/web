@@ -1,62 +1,164 @@
-    *{
+@import url(https://fonts.googleapis.com/css?family=Krona+One:regular);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+*{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    background-color: rgb(0, 0, 0);
-  }
+    font-family: 'playfair display', sans-serif;
+     box-sizing: border-box; /*Garante que width inclui padding */
+    overflow-x: hidden;    
+}
 #logo{
-    width: 100px;
+    width: 100%;
     height: 100px;
      }
 header{
-    height: 90px;
+    width: 100%;
+    height: 124px;
     padding: 10px 0px;
     display: flex;
-    justify-content:space-between;
+    justify-content: center;
     align-items: center;
-    background-color: #b50a3b;
+    background-color: #4d393996;
     box-sizing: border-box;
+    position: fixed;
+    z-index: 1;
       }
 header p {
     color: #fff;
     font-size: 20px;
     background-color: transparent;
 }
-p{
-    font-family:'kdam thmor pro', sans-serif;
- }
-h1{
-    font-family:'kdam thmor pro', sans-serif;
+  .modal{
+    width: 100%;
+    height: 130vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .home-container{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/75/Asian_Kung_Fu_Generation_-_Anime_Friends_2017_2.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  }
+  .home-text{
+    width: 55%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 10px;
+    margin-top: 150px;
+    padding: 10px;
+    color: #fff;
+    z-index: 1;
+  }
+  .home-text h1{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    font-size: 5rem;
+    text-align: flex-start;
+  }
+  .home-text span{
+  font-size: 5rem;
+   color: #e90000;
+  }
+  .home-text p {
+    align-self:center;
+    height: 40%;
+    text-align: center;
+    font-size: 2rem;
+    
+    font-weight: 500;
+
+  }
+  .presentation-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background:radial-gradient(#6b5305, #000000);   
+  }
+  .sobre-container{
+    width: 100%;
+    height: 50%;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
   }
 .sobre{
-    color: #fff;
-    display: inline-block;
-    position: relative;
-    left: 30%;
-    text-align: center;
+    color: white;
+    width: 45%;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+#guitar{
+    max-width: 100%;
+    margin-left: 10%;
+   background-color: rgb(236, 225, 225);
+   animation: guitar-animation 2s infinite ease-in-out;
+}
+@keyframes guitar-animation {
+    0%{
+        background-color: #fff;
+    }
+    25%{
+        background-color: #807c7c;
+    }
+    50%{
+        background-color: #6a6a6a;
+    }
+    75%{
+        background-color: #524646;
+    }
+    100%{
+        background-color: #f3cfcf;
+    }
+}   
+
+.motivo-container{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+
 }
 .motivo{
-    display: inline-block;
-    position: relative;
-    left: 30%;
-    text-align: center;
-    color: #fff;
+    color: white;
+    width: 45%;
+    margin-top: 30px;
+    font-size: 1.5rem;
           }
-.musicas{
+
+.songs-container{
+    background-color: black;
+}
+.songs-title{
     display: flex;
     flex-direction: column;
 }
-.musicas p{
+.songs-title p{
     color: #fff;
    font-size:xx-large;
 }
-.card-conteiner{
+.song-cards{
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
-.song-cards{
+.card-container{
     width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -136,7 +238,7 @@ height: 90px;
 padding: 10px 0px;
 align-items: center;
 justify-content: center;
-background-color: #b50a3b;
+background-color: #000000;
 }
 footer p{
     color: #fff;
@@ -170,7 +272,7 @@ footer p{
     footer {
         display:flex;
     }
-    .song-cards {
+    .card-container{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 5px;
