@@ -3,6 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    color: #fff;
     text-decoration: none;
     font-family: 'playfair display', sans-serif;
      box-sizing: border-box; /*Garante que width inclui padding */
@@ -19,10 +20,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #4d393996;
+    background-color: rgba(77, 57, 57, 0.5);
     box-sizing: border-box;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
       }
 header p {
     color: #fff;
@@ -47,8 +48,8 @@ header p {
   height: 130vh;
   display: flex;
   justify-content: center;
-  }
-  .home-text{
+}
+.home-text{
     width: 55%;
     height: 75%;
     display: flex;
@@ -107,7 +108,7 @@ header p {
     max-width: 100%;
     margin-left: 10%;
    background-color: rgb(236, 225, 225);
-   animation: guitar-animation 2s infinite ease-in-out;
+   animation: guitar-animation 6s infinite ease-in-out;
 }
 @keyframes guitar-animation {
     0%{
@@ -117,13 +118,13 @@ header p {
         background-color: #807c7c;
     }
     50%{
-        background-color: #6a6a6a;
+        background-color: #ffffff;
     }
     75%{
-        background-color: #524646;
+        background-color: #807c7c;
     }
     100%{
-        background-color: #f3cfcf;
+        background-color: #fff;
     }
 }   
 
@@ -140,17 +141,61 @@ header p {
     margin-top: 30px;
     font-size: 1.5rem;
           }
-
+.band-container{
+    width: 100%;
+    background-color: #000000;
+}
+.band-text{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.band-text h1{
+    font-size: 3rem;
+    color: #fff;
+}
+.band-members .text{
+    font-size: 1.5rem;
+    width: 50%;
+}
+.container{
+    display: flex;
+    justify-content: space-around
+}
+.band-members img{
+    width: 700px;
+}
+.gotoh{
+    background: linear-gradient(to top,#146be3,#f133cc);
+    
+}
+.yamada{
+    background: linear-gradient(to top,#c7d500 ,#0e2cec);
+}
+.ijichi{
+    background: linear-gradient(#e3ff0e,#ff5e1e);
+}
+.kita{
+    background: linear-gradient(#ff0000,#7fe155);
+}
 .songs-container{
     background-color: black;
 }
-.songs-title{
+.songs-text{
     display: flex;
     flex-direction: column;
 }
-.songs-title p{
+.songs-text h1{
     color: #fff;
-   font-size:xx-large;
+    font-size: 3rem;
+    text-align: center;
+}
+.songs-text p{
+    color: #fff;
+   font-size:2rem;
 }
 .song-cards{
     width: 100%;
