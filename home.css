@@ -6,8 +6,8 @@
     color: #fff;
     text-decoration: none;
     font-family: 'playfair display', sans-serif;
-     box-sizing: border-box; /*Garante que width inclui padding */
-    overflow-x: hidden;    
+     box-sizing: border-box; /*Garante que width inclui padding */        
+    
 }
 #logo{
     width: 100%;
@@ -91,22 +91,18 @@ header p {
     background:radial-gradient(#6b5305, #000000);   
   }
   .sobre-container{
-    width: 100%;
+    width: 99%;
     height: 50%;
-    margin: 10px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly   ;
   }
 .sobre{
     color: white;
     width: 45%;
     margin-top: 30px;
-    margin-left: 20px;
     font-size: 1.5rem;
 }
 #guitar{
-    max-width: 100%;
-    margin-left: 10%;
    background-color: rgb(236, 225, 225);
    animation: guitar-animation 6s infinite ease-in-out;
 }
@@ -129,10 +125,10 @@ header p {
 }   
 
 .motivo-container{
-    width: 100%;
+    width: 90%;
     height: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
 }
 .motivo{
@@ -158,8 +154,8 @@ header p {
     color: #fff;
 }
 .band-members .text{
-    font-size: 1.5rem;
-    width: 50%;
+    font-size: 2.5rem;
+    width: 50%
 }
 .container{
     display: flex;
@@ -167,6 +163,7 @@ header p {
 }
 .band-members img{
     width: 700px;
+    border-radius: 10%;
 }
 .gotoh{
     background: linear-gradient(to top,#146be3,#f133cc);
@@ -204,6 +201,7 @@ header p {
     margin-top: 50px;
 }
 .card-container{
+    max-width: 100%;
     width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -275,48 +273,48 @@ header p {
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
 }
+@media (max-width: 900px) {
 
-footer{
-display: none;
-margin-top: 20px;
-height: 90px;
-padding: 10px 0px;
-align-items: center;
-justify-content: center;
-background-color: #000000;
-}
-footer p{
-    color: #fff;
-    font-size: 20px;
-    background-color: transparent;
-}
-@media (max-width: 768px) {
-    header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0px 0px 10px;
-    }
-    header p {
-        display: none;
-    }
-    section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-    }
-    .sobre{
-        position: relative;
-        left: 0px;
-    }
-    .motivo{
-        position: relative;
-        left: 0px;
-    }
-    footer {
-        display:flex;
-    }
+      .home-text{
+          width: 100%;
+          justify-content:space-evenly;
+
+        }
+        .home-text h1{ 
+          font-size: 2.1rem;
+          justify-content: center;
+        }
+        .home-text span{
+        font-size: 2.1rem;
+        }
+
+        .sobre-container{
+          justify-content: space-evenly;
+        }
+      .sobre{
+          font-size: 1.3rem;
+      }
+      
+      .motivo-container{
+          justify-content: space-evenly;
+      
+      }
+      .motivo{
+          font-size: 1rem;
+                }
+      .band-text h1{
+          font-size: 2rem;
+      }
+      .band-members .text{
+          font-size: 1.5rem;
+      }
+      .container{
+          margin: 1px;
+      }
+      .band-members img{
+          width: 400px;
+          border-radius: 10%;
+      }
     .card-container{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
