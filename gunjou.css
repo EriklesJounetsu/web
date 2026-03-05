@@ -1,3 +1,13 @@
+rt{
+  color: rgba(205, 163, 163, 0); 
+  font-size:large;
+}
+p > ruby > rt :hover {
+  color: black;
+  display: ruby;
+  transition: 1s ease-in-out;
+}
+
 body {
   background-color: rgb(49, 122, 233);
   background-image: url('https://i.pinimg.com/originals/d4/db/99/d4db99a935e5806cdce9358a9a101124.jpg');
@@ -26,7 +36,8 @@ h1 {
 p:hover{
   color:rgb(160, 37, 133);
   background-color: rgb(233, 208, 208);
-  border-radius: 10px;
+  border-radius: 30px;
+  animation: 1s ease-in;
 }
 a {
   color: rgb(160, 37, 133);
